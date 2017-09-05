@@ -1,0 +1,29 @@
+{
+  "name": "Web App",
+  "authors": [
+    "TaiChiPandaBoxing <809457175@qq.com>"
+  ],
+  "description": "angularjs web app",
+  "main": "",
+  "keywords": [
+    "angularjs"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "1.5.8",
+    "angular-cookies": "1.5.8"
+  },
+  "dependencies": {
+    "angular-ui-router": "ui-router#0.3.1",
+    "angular-validation": "^1.4.4",
+    "angular-animate": "1.5.8"
+  }
+}

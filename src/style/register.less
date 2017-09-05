@@ -1,0 +1,112 @@
+.register{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-image: url("../image/background.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    form{
+        .mt(55);
+        .ng-invalid{
+            &+span{
+                position: absolute;
+                right: 0;
+                .fs(12);
+                background-color: transparent;
+                text-align: right;
+                color: @dangerColor;
+                p{
+                    margin: 0;
+                }
+            }
+        }
+        .form-line{
+            margin-left: auto;
+            margin-right: auto;
+            .w(300);
+            .h(40);
+            .lh(40);
+            color: @defaultColor;
+            font-size: 0;
+            &:first-child{
+                border-bottom: 1px solid @defaultColor;
+            }
+            span.icon{
+                .w(55);
+                .h(40);
+                background-color: @iconBgColor;
+                background-repeat: no-repeat;
+                background-position: 16px 8px;
+            }
+            .account{
+                background-image: url("../image/account.png");
+            }
+            .lock{
+                background-image: url("../image/lock.png");
+            }
+            input{
+                .pl(30);
+                .w(214);
+                .h(38);
+                border: none;
+                background-color: @formBgColor;
+                outline: none;
+                .fs(14);
+                color: @defaultColor;
+                &::-webkit-input-placeholder{
+                    color: @defaultColor;
+                } 
+            }
+        }
+        .message-wrap{
+            .mt(40);
+            .w(300);
+            margin-left: auto;
+            margin-right: auto;
+            .message-box{
+                .pl(30);
+                .w(190);
+                .h(40);
+                border: none;
+                background-color: @formBgColor;
+                box-sizing: border-box;
+                outline: none;
+                .fs(14);
+                color: @defaultColor;
+                &::-webkit-input-placeholder{
+                    color: @defaultColor;
+                } 
+            }
+            .message{
+                margin-top: 18px;
+                padding: 0 5px;
+                border: 1px solid @headBgColor;
+                .fs(14);
+                color: @headBgColor;
+                &.disabled{
+                    color: @lineColor;
+                    border-color: @lineColor;
+                }
+            }
+        }
+        button{
+            .w(300);
+            .h(35);
+            font-weight: bold;
+            .fs(22);
+            &.login-btn{
+                margin-top: 60px;
+                background-color: @headBgColor;
+                color: @defaultColor;
+            }
+            &.register-btn{
+                margin-top: 20px;
+                background-color: @btnBgColor;
+                color: @headBgColor;
+                border: 1px solid @headBgColor;
+            }
+        }
+    }
+}
